@@ -8,8 +8,8 @@ function doMath(){
        var number1=$('#number1').val();
        var number2=$('#number2').val();
        var operation=$('#operation').val();
-       var valid=validate(operation,number1,number2);
-       if(valid===true){
+       var validate=validate(operation,number1,number2);
+       if(validate===true){
 
         var res=result(operation,parseInt(number1),parseInt(number2));
         $('#result').text(res);
