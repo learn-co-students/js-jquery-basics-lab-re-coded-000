@@ -13,7 +13,7 @@ function doMath() {
   });	 	
 }
 
-function validate(firstNum, secondNum, operat) {
+function validate(operat, firstNum, secondNum) {
   if (typeof(firstNum) !== 'number' || typeof(secondNum) !== 'number' || isNaN(firstNum) || firstNum === '' || isNaN(secondNum) || secondNum === '' ) {
     $('#result').text("Sorry, one of those is not a valid number!");
      return 'Sorry, one of those is not a valid number!';}
@@ -28,29 +28,28 @@ function validate(firstNum, secondNum, operat) {
  
 }
 
-function result(firstNum, secondNum, operat) {
+function result(operat, firstNum, secondNum) {
   //console.log(firstNum, secondNum, operat)
-  //var result;
+  
   switch (operat) {
     case "+":
     $('#result').html(firstNum + secondNum);
     return firstNum + secondNum;
-    break;
+    
     case "-":
     $('#result').html(firstNum - secondNum);
     return firstNum - secondNum;
-    break;
+   
     case "*":
     $('#result').html(firstNum * secondNum);
     return firstNum * secondNum;
-    break;
+   
     case "/":
     $('#result').html(firstNum / secondNum);
     return firstNum / secondNum;
-    break;
+   
     default:
 
   }
 
-  //return result;
 }
