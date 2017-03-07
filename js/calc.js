@@ -8,7 +8,7 @@ function doMath() {
    var firstNum = parseInt($('#number1').val());
    var secondNum = parseInt($('#number2').val());
    var operat=$('#operation').val(); 
-   validate(firstNum, secondNum, operat);
+   validate(operat, firstNum, secondNum);
     // console.log("hi");
   });	 	
 }
@@ -23,7 +23,7 @@ function validate(operat, firstNum, secondNum) {
    return "Sorry, that is not a valid operator";}
 	
   else {
-   result(firstNum, secondNum, operat);
+   result(operat, firstNum, secondNum);
    return true;}
  
 }
