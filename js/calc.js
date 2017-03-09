@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-
   doMath();
-
+  result(operator, num1, num2);
+  validate(operator, num1, num2);
 });
 
   var num1 = $('#number1');
